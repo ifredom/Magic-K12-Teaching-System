@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/magic-admin/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/magic-admin/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/magic-common/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/magic-common/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/magic-dependencies/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/magic-framework/magic-common/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/magic-framework/magic-common/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/magic-framework/magic-spring-boot-starter-mybatis/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/magic-framework/magic-spring-boot-starter-mybatis/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/magic-framework/magic-spring-boot-starter-redis/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/magic-framework/magic-spring-boot-starter-redis/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/magic-framework/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/magic-framework/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/magic-mybatis-generator/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/magic-mybatis-generator/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/magic-server/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/magic-server/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/magic-web/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/magic-web/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/server/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
+  </component>
+</project>
