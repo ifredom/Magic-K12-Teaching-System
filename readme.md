@@ -5,8 +5,8 @@
 > [数据表文档](https://www.mindskip.net:888/guide/feature.html)
 
 ## 待办roadmap
-[settings.xml](../../software/dev/apache-maven-3.8.5/conf/settings.xml)
-[settings.xml](../../software/dev/apache-maven-3.8.5/conf/settings.xml)
+
+
 
 - 用户模块
 
