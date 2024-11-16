@@ -81,7 +81,7 @@ public class AutoCodeGenerator {
                     // 开启 swagger 模式。如果开启，需要导入 swagger 的 pom 依赖
                     .enableSwagger()
                     // 指定输出目录
-                    .outputDir(project_root_path  + "/magic-server" + "/src/main/java");
+                    .outputDir(project_root_path  + "/magic-admin" + "/src/main/java");
         });
 
         // 4、包配置

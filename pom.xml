@@ -12,7 +12,7 @@
 
     <modules>
         <module>magic-dependencies</module>
-        <module>magic-server</module>
+        <module>magic-admin</module>
         <module>magic-mybatis-generator</module>
     </modules>
 
@@ -22,7 +22,7 @@
 
 
     <properties>
-        <revision>0.0.1-jdk17-snapshot</revision>
+        <revision>magic-k12-0.0.1-snapshot</revision>
         <!-- Maven 相关 -->
         <java.version>17</java.version>
         <maven.compiler.source>${java.version}</maven.compiler.source>
