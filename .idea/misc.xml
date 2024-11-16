@@ -14,7 +14,6 @@
     </option>
     <option name="ignoredFiles">
       <set>
-        <option value="$PROJECT_DIR$/magic-admin/pom.xml" />
         <option value="$PROJECT_DIR$/magic-common/pom.xml" />
         <option value="$PROJECT_DIR$/magic-framework/magic-common/pom.xml" />
         <option value="$PROJECT_DIR$/magic-framework/magic-spring-boot-starter-mybatis/pom.xml" />

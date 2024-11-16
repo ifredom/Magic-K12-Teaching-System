@@ -12,8 +12,8 @@
 
     <modules>
         <module>magic-dependencies</module>
-        <module>magic-admin</module>
         <module>magic-mybatis-generator</module>
+        <module>magic-admin</module>
     </modules>
 
     <name>${project.artifactId}</name>

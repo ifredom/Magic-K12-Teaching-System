@@ -32,12 +32,12 @@
         <!-- 监控相关 -->
 
         <!-- DB 相关 -->
-        <druid.version>1.2.8</druid.version>
+        <druid.version>1.2.23</druid.version>
         <mybatis-plus.version>3.5.2</mybatis-plus.version>
         <dynamic-datasource.version>4.3.1</dynamic-datasource.version>
         <!--  模板引擎,mybatis-plus生成器模板引擎依赖-->
         <velocity.version>2.3</velocity.version>
-        <redisson.version>3.32.0</redisson.version>
+        <redisson.version>3.26.0</redisson.version>
 
 
         <easyexcel.verion>3.3.4</easyexcel.verion>
@@ -89,8 +89,6 @@
             </dependency>
 
             <!-- redis -->
-
-
             <dependency>
                 <groupId>org.redisson</groupId>
                 <artifactId>redisson-spring-boot-starter</artifactId>
@@ -261,19 +259,6 @@
                 <groupId>com.alibaba</groupId>
                 <artifactId>transmittable-thread-local</artifactId>
                 <version>${transmittable-thread-local.version}</version>
-            </dependency>
-
-            <!-- 社交登陆（例如说，个人微信、企业微信等等） -->
-            <dependency>
-                <groupId>com.xingyuv</groupId>
-                <artifactId>spring-boot-starter-justauth</artifactId>
-                <version>${justauth.version}</version>
-                <exclusions>
-                    <exclusion>
-                        <groupId>cn.hutool</groupId>
-                        <artifactId>hutool-core</artifactId>
-                    </exclusion>
-                </exclusions>
             </dependency>
 
             <!-- 微信支付 -->

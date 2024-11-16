@@ -1,20 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
-
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.magic</groupId>
         <artifactId>magic-root</artifactId>
         <version>${revision}</version>
     </parent>
-    <packaging>jar</packaging>
 
     <artifactId>magic-admin</artifactId>
-    <description>服务端</description>
+
+    <packaging>jar</packaging>
 
     <properties>
+        <revision>magic-k12-0.0.1-snapshot</revision>
+        <spring.boot.version>2.7.18</spring.boot.version>
+
         <!-- Test 测试相关 -->
         <powermock.version>2.0.2</powermock.version>
         <testng.version>7.7.1</testng.version>
@@ -64,10 +66,10 @@
         </dependency>
 
         <!-- 认证授权 -->
-<!--        <dependency>-->
-<!--            <groupId>org.springframework.boot</groupId>-->
-<!--            <artifactId>spring-boot-starter-security</artifactId>-->
-<!--        </dependency>-->
+        <!--        <dependency>-->
+        <!--            <groupId>org.springframework.boot</groupId>-->
+        <!--            <artifactId>spring-boot-starter-security</artifactId>-->
+        <!--        </dependency>-->
 
         <!-- 工具类 -->
         <dependency>
@@ -134,6 +136,13 @@
             <groupId>com.alibaba</groupId>
             <artifactId>easyexcel</artifactId>
         </dependency>
+
+
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>transmittable-thread-local</artifactId>
+        </dependency>
+
 
     </dependencies>
 
