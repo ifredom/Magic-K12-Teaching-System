@@ -42,3 +42,4 @@ build/
 .flattened-pom.xml
 .history
 magic-ui/**/node_modules
+magic-ui/**/node_modules/

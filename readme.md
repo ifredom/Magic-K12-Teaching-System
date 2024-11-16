@@ -14,6 +14,15 @@
 
 1. 配置阿里镜像源
 
+## 推送
+
+```bash
+# 推送到 Gitee
+git push origin master
+
+# 推送到 GitHub
+git push github master
+```
 
 ## 技术栈
 
