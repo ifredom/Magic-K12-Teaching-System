@@ -17,7 +17,7 @@
 ## 推送
 
 ```bash
-# 推送到 Gitee
+# 推送到 Gitee[config](.git%2Fconfig)
 git push origin master
 
 # 推送到 GitHub
