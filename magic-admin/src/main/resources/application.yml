@@ -1,12 +1,13 @@
 spring:
     application:
         name: magic-java-server
+    main:
+        allow-circular-references: true # 允许循环依赖，因为项目是三层架构，无法避免这个情况。
+
 
     profiles:
         active: dev
 
-    main:
-        allow-circular-references: true # 允许循环依赖，因为项目是三层架构，无法避免这个情况。
 
     # Servlet 配置
     servlet:
@@ -15,6 +16,7 @@ spring:
             max-file-size: 16MB # 单个文件大小
             max-request-size: 32MB # 设置总上传的文件大小
 
+    # cache 缓存配置
     cache:
         type: redis
         redis:
@@ -37,22 +39,43 @@ spring:
         static-path-pattern: /**
         pathmatch:
             matching-strategy: ant_path_matcher
+    #  web 配置
     web:
         resources:
             static-locations: classpath:/static/ # 静态资源文件路径配置，多个路径用逗号分隔。优先级从上到下。
+
+#################### flyway 配置 ##########
+    flyway:
+        # 是否启用，默认为true
+        enabled: true
+        # 编码格式，默认UTF-8
+        encoding: UTF-8
+        # sql脚本存放路径，默认db/migration
+        locations: classpath:db/migration
+        # sql脚本文件名前缀，默认V
+        sql-migration-prefix: MT
+        # sql脚本文件名分隔符，默认双下划线__
+        sql-migration-separator: __
+        # sql脚本文件名称的后缀，默认.sql
+        sql-migration-suffixes: .sql
+        # 迁移时是否进行校验，确保历史脚本未篡改，默认true
+        validate-on-migrate: true
+        # 当迁移发现数据库非空且存在没有元数据的表时，自动执行基准迁移，新建schema_version表
+        baseline-on-migrate: true
+
+#################### server servlet 配置 ##########
 server:
     servlet:
         encoding:
             enabled: true
             charset: UTF-8 # 必须设置 UTF-8，避免 WebFlux 流式返回乱码问题
             force: true
-
+#################### log 日志配置 ##########
 logging:
     level:
         root: error
         org.springframework: info
         org.springframework.security: debug
-
 
 #################### mybatis-plus配置 ####################
 
@@ -67,7 +90,6 @@ mybatis-plus:
             logic-not-delete-value: 0
     configuration:
         map-underscore-to-camel-case: true
-
 
 #################### magic server 项目通用配置 ##########
 magic:

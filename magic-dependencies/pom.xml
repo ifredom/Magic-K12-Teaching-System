@@ -35,6 +35,8 @@
         <druid.version>1.2.23</druid.version>
         <mybatis-plus.version>3.5.2</mybatis-plus.version>
         <dynamic-datasource.version>4.3.1</dynamic-datasource.version>
+        <flyway.version>8.5.13</flyway.version>
+
         <!--  模板引擎,mybatis-plus生成器模板引擎依赖-->
         <velocity.version>2.3</velocity.version>
         <redisson.version>3.26.0</redisson.version>
@@ -86,6 +88,12 @@
                 <groupId>com.alibaba</groupId>
                 <artifactId>druid-spring-boot-starter</artifactId>
                 <version>${druid.version}</version>
+            </dependency>
+            <!-- flyway SQL -->
+            <dependency>
+                <groupId>org.flywaydb</groupId>
+                <artifactId>flyway-core</artifactId>
+                <version>${flyway.version}</version>
             </dependency>
 
             <!-- redis -->
