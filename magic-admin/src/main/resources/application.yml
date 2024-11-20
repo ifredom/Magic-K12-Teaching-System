@@ -6,7 +6,7 @@ spring:
 
 
     profiles:
-        active: dev
+        active: local
 
 
     # Servlet 配置
@@ -50,18 +50,24 @@ spring:
         enabled: true
         # 编码格式，默认UTF-8
         encoding: UTF-8
-        # sql脚本存放路径，默认db/migration
+        # sql脚本存放路径，默认 db/migration
         locations: classpath:db/migration
         # sql脚本文件名前缀，默认V
-        sql-migration-prefix: MT
+        sql-migration-prefix: V
         # sql脚本文件名分隔符，默认双下划线__
         sql-migration-separator: __
         # sql脚本文件名称的后缀，默认.sql
         sql-migration-suffixes: .sql
+        # 是否替换sql脚本中的占位符，占位符默认是${xxx},默认是替换，如果不需要替换，可以设置为false
+        placeholder-replacement: false
         # 迁移时是否进行校验，确保历史脚本未篡改，默认true
         validate-on-migrate: true
+        # 设置为false会删除指定schema下所有的表，生产环境务必禁用，spring中该参数默认是false，需要手动设置为true
+        clean-disabled: true
         # 当迁移发现数据库非空且存在没有元数据的表时，自动执行基准迁移，新建schema_version表
         baseline-on-migrate: true
+        # 基准版本，默认0
+        baseline-version: 1.0.0
 
 #################### server servlet 配置 ##########
 server:

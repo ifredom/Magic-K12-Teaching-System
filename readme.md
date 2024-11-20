@@ -17,11 +17,8 @@
 ## 推送
 
 ```bash
-# 推送到 Gitee[config](.git%2Fconfig)
+# 推送到 Gitee 同时 推送到 GitHub
 git push origin master
-
-# 推送到 GitHub
-git push github master
 ```
 
 ## 技术栈
