@@ -14,7 +14,7 @@
     <description>magic-mybatis-generator</description>
 
     <properties>
-        <mybatis-plus.version>3.5.2</mybatis-plus.version>
+        <mybatis-plus.version>3.5.7</mybatis-plus.version>
         <velocity.version>2.3</velocity.version>
     </properties>
 

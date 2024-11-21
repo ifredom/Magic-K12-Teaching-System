@@ -12,7 +12,7 @@ import java.util.Collections;
 
 /**
  * 代码生成器
- * mybatis-plus-generator == 3.5.2
+ * mybatis-plus-generator == 3.5.7
  *
  * @author Magic Tang
  * @date 2024/09/06

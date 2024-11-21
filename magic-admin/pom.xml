@@ -152,6 +152,13 @@
             <artifactId>transmittable-thread-local</artifactId>
         </dependency>
 
+        <!--    Mybatis-plus 3.5.2 ->3.5.7 缺少此依赖-->
+        <dependency>
+            <groupId>org.jetbrains</groupId>
+            <artifactId>annotations</artifactId>
+
+        </dependency>
+
 
     </dependencies>
 
