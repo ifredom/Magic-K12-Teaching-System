@@ -29,8 +29,8 @@ public class SysUserServiceImpl extends ServiceImpl<SysUserMapper, SysUserEntity
     }
 
     @Override
-    public SysUserEntity getUserByNameAndOrderId(UserAndOrderModel userAndOrderModel) {
-        return sysUserMapper.getUserByNameAndOrderId(userAndOrderModel);
+    public SysUserEntity getUserByName(UserAndOrderModel userAndOrderModel) {
+        return sysUserMapper.getUserByName(userAndOrderModel);
     }
 
 

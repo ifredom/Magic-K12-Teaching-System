@@ -11,9 +11,9 @@ public class UserAndOrderModel implements Serializable {
     private static final long serialVersionUID = 1L;
 
     @NotNull(message = "userId不能为空")
-    private Long userId;
+    private Long id;
     @NotNull(message = "username不能为空")
     private String username;
-    @NotNull(message = "orderId不能为空")
-    private String orderId;
+    @NotNull(message = "password不能为空")
+    private String password;
 }

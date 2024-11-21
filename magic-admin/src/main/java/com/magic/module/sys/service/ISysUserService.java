@@ -16,5 +16,5 @@ public interface ISysUserService extends IService<SysUserEntity> {
      IPage<SysUserEntity> selectUserBySex(Page<SysUserEntity> page, Integer sex);
 
 
-    SysUserEntity getUserByNameAndOrderId(UserAndOrderModel userAndOrderModel);
+    SysUserEntity getUserByName(UserAndOrderModel userAndOrderModel);
 }

@@ -23,6 +23,7 @@ import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
@@ -54,11 +55,17 @@ public class SysUserController {
     private ILock mysqlLock;
 
     @Autowired
+    @Qualifier("primaryDataSource")
     private DataSource dataSource;
 
 
-
     private Locker locker;
+
+    @RequestMapping(value = "/hello1", method = RequestMethod.GET)
+    @ApiOperation(value = "hello", notes = "hello")
+    public String getHello1() {
+            return "hello1";
+    }
 
     @RequestMapping(value = "/hello", method = RequestMethod.GET)
     @ApiOperation(value = "hello", notes = "hello")
@@ -72,14 +79,14 @@ public class SysUserController {
         }
 
         UserAndOrderModel userAndOrderModel = new UserAndOrderModel();
-        userAndOrderModel.setUserId(4L);
-        userAndOrderModel.setUsername("张恒");
+        userAndOrderModel.setId(4L);
+        userAndOrderModel.setUsername("user3");
 
 
-        SysUserEntity u =  sysUserService.getUserByNameAndOrderId(userAndOrderModel);
+        SysUserEntity u =  sysUserService.getUserByName(userAndOrderModel);
         System.out.println(u);
 
-        return "hello";
+        return u.toString();
     }
 
 
@@ -149,7 +156,7 @@ public class SysUserController {
             return AjaxResult.error(bindingResult.getFieldError().getDefaultMessage());
         }
 
-        Long id = userAndOrderModel.getUserId();
+        Long id = userAndOrderModel.getId();
 
         UserAndOrderModel u =  sysUserService.getUnionUserInfo(id);
 

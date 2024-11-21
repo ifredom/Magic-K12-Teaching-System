@@ -35,14 +35,14 @@ public class DruidDataSourceConfig {
 
     @Primary
     @Bean(name="primaryDataSource")
-    @ConfigurationProperties(prefix="spring.datasource.master")
+    @ConfigurationProperties(prefix="spring.datasource.druid.master")
     public DataSource dataSource1() {
         return new DruidDataSource();
     }
 
 
     @Bean(name="secondaryDataSource")
-    @ConfigurationProperties(prefix="spring.datasource.slave")
+    @ConfigurationProperties(prefix="spring.datasource.druid.slave")
     @ConditionalOnProperty(prefix="spring.datasource.slave", name="spring.datasource.slave.enabled", havingValue="true")
     public DataSource dataSource2() {
         return new DruidDataSource();

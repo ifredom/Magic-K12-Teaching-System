@@ -11,12 +11,11 @@
         WHERE u.id = #{userId}
     </select>
 
-    <!-- 根据userName和orderId查询用户 -->
-    <select id="getUserByNameAndOrderId" resultType="com.magic.module.sys.entity.SysUserEntity">
-        SELECT u.id AS userId, u.name AS userName,d.id AS orderId
+    <!-- 根据 username 查询用户 -->
+    <select id="getUserByName" resultType="com.magic.module.sys.entity.SysUserEntity">
+        SELECT u.id AS userId, u.username
         FROM sys_user u
-        JOIN sys_order d ON u.id = d.user_id
-        WHERE u.name = #{userName} AND d.id = #{orderId}
+        WHERE u.username = #{username}
     </select>
 
     <!-- 根据性别查询用户 -->

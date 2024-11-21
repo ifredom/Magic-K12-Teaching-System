@@ -13,7 +13,7 @@ public interface SysUserMapper  extends BaseMapper<SysUserEntity> {
 
     UserAndOrderModel getUnionUserInfo(long userId);
 
-    SysUserEntity getUserByNameAndOrderId(UserAndOrderModel userAndOrderModel);
+    SysUserEntity getUserByName(UserAndOrderModel userAndOrderModel);
 
     IPage<SysUserEntity> selectUserBySex(Page<?> page, int sex);
 }
