@@ -23,14 +23,14 @@ import javax.sql.DataSource;
  * @email 1950735817@qq.com
  * +----------------------------------------------------------------------
  */
-@Configuration
-@EnableTransactionManagement
+//@Configuration
+//@EnableTransactionManagement
 public class FlywayConfig {
 
     private static final String SQL_LOCATION = "classpath:db/migration";
 
 
-    @Autowired
+//    @Autowired
     @Qualifier("primaryDataSource")
     private DataSource dataSource;
 
